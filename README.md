@@ -64,14 +64,68 @@ $ pwd # /home
 <br/>You can add `../` as much as you like. 
 
 ---
-#### 1.1.3 ls
+#### 1.1.4 ls
 ```Bash
 $ ls # list directory
 $ ls -a # list all in current directory
 $ ls -R # list directory recusively including son's directory and son's son's son and so on
 ```
 <br/>You can use the above `cd` command to goto diffenent directory and use `ls` command to see the directorys in it.
+
+---
+#### 1.1.5 rm
+```Bash
+$ rm a.txt # remove a single file named a.txt
+$ rm -R I_am_a_coder! # remove all the I_am_a_coder! 's directories
+```
+<br/>Be careful when you use this command!You can type `Ctrl` + `c` to interrupt all the commands.
+
+---
+#### 1.1.6 sudo
+```Bash
+$ ls /root # ls: cannot open directory '/root': Permission denied
+$ sudo ls /root # that is ok,you need sudo to promote the authority
+$ su - # get into the root users.From "chengzhi@chengzhi-platform" to "chengzhi@chengzhi-platform"
+$ exit # ruturn to your own users.
+```
+<br/>If you haven't set your  `root` 's passwd,you cannot went into root,whatever you type for the password!!!
+<br/>See it in next section 1.2.
+
+---
 ### 1.2 Give your account `root` access
+#### 1.2.1 Set your `root`'s password
+<br/>If you have already set it ,skip it.
+```Bash
+$ sudo passwd root
+```
+<br/>For the default settings for Ubantu,root has been .So you have to set the password and then use it.
+
+---
+#### 1.2.2 Give your account all authority as `root`
+```Bash
+$ su - root # change into root 
+$ gedit /etc/sudoers # use the txt editor "gedit" to open the file "sudoers"
+```
+<br/>After you complete above,find the line below:
+```Bash
+root	ALL=(ALL:ALL) ALL
+```
+<br/>Add your account just below it , my name is chengzhi ,so i add this.You can add your own.
+```Bash
+chengzhi	ALL=(ALL:ALL) ALL
+```
+<br/>After adding , the file may look like this:
+```Bash
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+chengzhi	ALL=(ALL:ALL) ALL
+```
+<br/>Maybe there will be some output for gedit when you are doing the 1.2.2,regardless of it.
+<br/>Finally,restart your computer,and it is done.
+
+---
+### 1.3 Install important packages and choose your IDE.
+
 
 ## 2.Begin with the Dlib!
 ### DownLoad
