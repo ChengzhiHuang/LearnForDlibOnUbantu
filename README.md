@@ -13,7 +13,7 @@
 ## 1.Something you should do after installing the Ubantu system!
 <br/>If you are familiar with the Ubantu,just please [skip]() it.
 ### 1.1 Learn to use `bash`
-<br/>The book I used to learn `bash` is [The Command Line Crash Course](),I will upload it if it doesn't violate the rules.
+<br/>The book I used to learn `bash` is [The Command Line Crash Course](https://github.com/ChengzhiHuang/LearnForDlibOnUbantu/blob/ChengzhiHuang-README-Change/Terminal_Crash_Course%20bookmard%20by%20ChengzhiHuang.pdf),I will upload it if it doesn't violate the rules.
 <br/>So now ,I will only show you some useful commands.If you wants more,follow the book I mentioned above.
 <br/>All the `>` before the command is to show the same `$` before your bash when you type characters.
 <br/>So you don't have to type it.
